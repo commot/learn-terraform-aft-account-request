@@ -1,9 +1,9 @@
-module "sandbox_test" {
+module "test" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
     AccountEmail              = "commonsthomas+sandbox@gmail.com"
-    AccountName               = "sandbox-test-aft"
+    AccountName               = "test-aft"
     ManagedOrganizationalUnit = "Sandbox"
     SSOUserEmail              = "commonsthomas+sandbox@gmail.com"
     SSOUserFirstName          = "Sandbox"
@@ -23,5 +23,5 @@ module "sandbox_test" {
     group = "non-prod"
   }
 
-  account_customizations_name = "sandbox"
+  account_customizations_name = "test"
 }
